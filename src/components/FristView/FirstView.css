@@ -55,7 +55,7 @@
 
 .info-btn {
   align-items: center;
-  background-image: url('./blue-background.svg');
+  background-image: url('/blue-background.svg');
   color: #fff;
   padding: 15px 25px;
   border: none;
