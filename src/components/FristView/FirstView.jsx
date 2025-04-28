@@ -16,7 +16,7 @@ function FirstView() {
     <h1 className="info-title"><span className="info-name">ジィンウィンリー</span>と申します。</h1>
     <h3 className="info-text">日本電子専門学校　Webデザイン科　２年</h3>
       
-      <a  href="https://drive.google.com/file/d/1A6qvfcqaLZuJBAElpNEUa8KaTnkjP3Yf/view?usp=sharing" className="info-btn">ポートフォリオ PDF</a>
+      <a  href="https://drive.google.com/file/d/1Btm0Cd7QvZlwlhgI9ebFr6ZBmi9F7bDl/view?usp=sharing" className="info-btn">ポートフォリオ PDF</a>
     </div>
     
   </div>

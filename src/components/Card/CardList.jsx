@@ -8,7 +8,7 @@ const projects = [
     title: "「e☆イヤホン」EC サイト UI リニュアル",
     description: "この課題は、1年次後期の産学連携授業で取り組んだ作品です。実際に多くのユーザーが利用するECサイトのUIリニューアルをテーマに、外部クライアント様から直接課題をいただきました。企画・デザイン・実装のすべてを一人で担当し、Reactを用いてシンプルで使いやすいUIを目指して開発を進めました。また、企業様に対して4回のプレゼンテーションを行い、本プロジェクトではチームリーダーも務めました。",
     src: "/earphone.svg",
-    url: "https://drive.google.com/file/d/1OUIA8BSTiYLz6U5YXzPlkgBcaNugqPT9/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1Me-19cPsdftfRGuMrSJERgSBsMW98TEL/view?usp=sharing",
     color: "/background2.svg"
   },
  
@@ -30,7 +30,7 @@ const projects = [
     title: "Webデザイン科のスペシャルサイト",
     description: "この課題はWebデザイン科に入って初めての課題です。Webデザイン科のファンを増やすためのスペシャルサイトの作成に依頼され、企画からデザイン実装まで１人で作成し「PC、スマホ、タプレット」３つのレスポンシブデザインに挑戦しました。Webデザイン科の学全員の前にプレゼンテーションしました",
     src: "/specialsite.svg",
-    url: "https://drive.google.com/file/d/1mfiTPZ0S1GA_TeQFnzMcju-aeKLglvDS/view?usp=sharing",
+    url: "https://drive.google.com/file/d/15YML25S1eqmddaiSh85FVosSiZvXD_yA/view?usp=sharing",
     color: "/background3.svg"
   },
 ];
