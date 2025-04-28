@@ -1,4 +1,4 @@
-/* Navigation container */
+
 .nav-container {
   position: fixed;
   top: 0;
@@ -13,7 +13,7 @@
   padding: 0px 30px;
 }
 
-/* Hamburger and close icon */
+
 .hamburger {
   background-image: url('./blue-background.svg');
   display: none;
@@ -26,7 +26,7 @@
 .no-scroll {
   overflow: hidden;
 }
-/* Navigation menu */
+
 .nav-items {
   transition: max-height 0.4s ease-in-out;
 }
@@ -60,7 +60,6 @@
   font-weight: 600;
   text-decoration: none;
 }
-/* Fade and scale effect on page load */
 @keyframes fadeInScale {
   0% {
     opacity: 0;
@@ -72,7 +71,6 @@
   }
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
 
   .nav-container{

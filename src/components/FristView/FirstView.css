@@ -74,7 +74,6 @@
   box-shadow: 2px 8px 15px #333;
 }
 
-/* Underline animation for image wrapper */
 .fv-img-wrapper::before {
   content: "";
   position: absolute;
@@ -118,7 +117,6 @@
   }
 }
 
-/* Fade and scale effect on page load */
 @keyframes fadeInScale {
   0% {
     opacity: 0;

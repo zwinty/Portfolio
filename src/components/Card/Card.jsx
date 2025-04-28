@@ -18,9 +18,9 @@ const Card = ({ i, title, description, src, url, color, progress, range, targetS
       <motion.div
         className="card"
         style={{
-          backgroundImage: `url(${color})`, // Use the color as an SVG background image
-          backgroundSize: 'cover', // Ensure the image covers the card's area
-          backgroundPosition: 'center', // Center the image
+          backgroundImage: `url(${color})`, 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center', 
           scale,
           top: `calc(-5vh + ${i * 25}px)`
         }}
