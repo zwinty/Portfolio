@@ -1,4 +1,3 @@
-import "./Project.css";
 import CardList from "../Card/CardList";
 
 const Project = () => {

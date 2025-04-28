@@ -4,10 +4,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './About.css'; // Make sure your CSS is linked
 
-const styles = {
-  sectionSubText: 'text-lg font-medium text-gray-500',
-  sectionHeadText: 'text-3xl font-semibold text-gray-800',
-};
 
 const textVariant = () => ({
   initial: { opacity: 0 },
@@ -33,8 +29,7 @@ const About = () => {
   return (
     <motion.div variants={textVariant()} initial="initial" animate="animate">
       <div className="section-header">
-        <p className={styles.sectionSubText}>自己紹介</p>
-        <h2 className={styles.sectionHeadText}>学歴</h2>
+        <h1>学歴</h1>
       </div>
 
       <div className="timeline-section">
