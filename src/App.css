@@ -12,18 +12,18 @@ body {
     list-style: none;
   }
   .fv-section{
-    background-image: url('./background.svg');
+    background-image: url('/background.svg');
 
   }
   .pj-section{
-    background-image: url('./pj-background.svg');
+    background-image: url('/pj-background.svg');
 
 
   }
   .pj-contact{
-    background-image: url('./pj-background.svg');
+    background-image: url('/pj-background.svg');
 
   }
   .about{
-    background-image: url('./pj-background.svg');
+    background-image: url('/pj-background.svg');
   }

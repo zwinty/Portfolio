@@ -1,5 +1,5 @@
 .footer {
-    background-image: url('./blue-background.svg'); 
+    background-image: url('/blue-background.svg'); 
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0px -2px 5px #515151;

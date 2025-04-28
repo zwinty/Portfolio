@@ -15,7 +15,7 @@
 
 
 .hamburger {
-  background-image: url('./blue-background.svg');
+  background-image: url('/blue-background.svg');
   display: none;
   font-size: 28px;
   color: white;
@@ -42,7 +42,7 @@
 }
 
 .nav-items li {
-  background-image: url('./blue-background.svg');
+  background-image: url('/blue-background.svg');
   padding: 20px 50px;
   box-shadow: 2px 3px 5px #515151;
   border-radius: 0px 0px  30px 30px;
