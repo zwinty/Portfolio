@@ -81,7 +81,7 @@
     font-size: 14px;
     text-decoration: none;
     color: #fff;
-    background-image: url('./blue-background.svg');
+    background-image: url('/blue-background.svg');
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
