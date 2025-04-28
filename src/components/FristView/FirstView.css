@@ -1,88 +1,204 @@
-.fv-container{
-    height: 100vh;
-    overflow: hidden;
-}
-/*navigation*/
-.nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav-items{
-    width: 50%
-  }
-  .nav-items ul{
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-    margin: 0;
-  }
-  .nav-items a{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .nav-items li{
-    background-image: url('./blue-background.svg');
-    padding: 20px 50px;
-  }
-
-  .nav-items li:hover{
-    background-image: url('./blue-background.svg');
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-    box-shadow: 2px 5px 5px #515151;
-  }
-
-  /*first view*/
-.fv-text{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fv-container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.fv-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
 
 .fv-img-wrapper {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  padding: 20px;
+}
+
+.info-title {
+  font-size: 2rem;
+  color: #444;
+  margin: 0;
+  text-align: center;
+}
+
+.info-name {
+  font-size: 3rem;
+  color: #367CDE;
+  margin: 0;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info-btn {
+  align-items: center;
+  background-image: url('./blue-background.svg');
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 2px 5px 5px #515151;
+  opacity: 0; 
+  transform: scale(0.8); 
+  animation: fadeInScale 1s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-btn:hover {
+  transform: scale(1.5);
+  box-shadow: 2px 8px 15px #333;
+}
+
+/* Underline animation for image wrapper */
+.fv-img-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  height: 12px;
+  border-radius: 20px;
+  background-color: #367CDE;
+  animation: drawLine 2s ease-out forwards;
+}
+
+.fv-text-img {
+  max-width: 80vw;
+  height: auto;
+}
+
+.star-img {
+  position: absolute;
+  top: -10px;
+  right: -100px;
+  width: 100px;
+  height: 100px;
+  animation: star 2s linear infinite;
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
   }
-  
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes star {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade and scale effect on page load */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .info-title,
+  .info-name,
+  .info-text {
+    display: block; 
+  }
+
+  .info-title {
+    font-size: 1.8rem;
+  }
+
+  .info-name {
+    font-size: 2.5rem;
+  }
+
+  .info-text {
+    font-size: 1.2rem;
+  }
+
+  .fv-text-img {
+    max-width: 70vw;
+  }
+  .fv-text{
+    height: 40%;
+  }
+
   .fv-img-wrapper::before {
-    content: "";
-    position: absolute;
-    bottom: -25px; 
-    left: 0;
-    height: 12px; 
-    border-radius: 20px;
-    background-color:#367CDE; 
-    animation: drawLine 1s ease-out forwards;
-  }
-  .star-img{
-    position: absolute;
-    top: -10px;
-    right: -100px;
-    animation: star 2s linear infinite;
+    height: 8px;
+    bottom: -15px;
+    width: 40%;
   }
 
-  
+  .star-img {
+    right: -50px;
+    width: 60px;
+    height: 60px;
+  }
+}
 
-  @keyframes drawLine {
-
-    from{
-        width: 0;
-    }
-
-    to {
-      width: 50%;
-    }
+@media (max-width: 480px) {
+  .info-title {
+    font-size: 1.5rem;
   }
 
-  @keyframes star {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  .info-name {
+    font-size: 2rem;
   }
+
+  .info-text {
+    font-size: 1rem;
+  }
+
+  .fv-text-img {
+    max-width: 60vw;
+  }
+  .fv-text{
+    height: 30%;
+  }
+
+
+  .fv-img-wrapper::before {
+    height: 6px;
+    bottom: -10px;
+    width: 30%;
+  }
+
+  .star-img {
+    right: -30px;
+    width: 50px;
+    height: 50px;
+  }
+}

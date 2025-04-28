@@ -1,7 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('./background.svg');
+    font-family: 'Noto Sans JP', sans-serif;
+    
   }
   a{
     text-decoration: none;
@@ -9,4 +10,20 @@ body {
 
   ul{
     list-style: none;
+  }
+  .fv-section{
+    background-image: url('./background.svg');
+
+  }
+  .pj-section{
+    background-image: url('./pj-background.svg');
+
+
+  }
+  .pj-contact{
+    background-image: url('./background.svg');
+
+  }
+  .about{
+    background-image: url('./pj-background.svg');
   }

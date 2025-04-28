@@ -1,0 +1,58 @@
+/* Overall Section Styles */
+.section-header {
+    text-align: center;
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove any padding */
+  }
+  
+  .section-header p{
+    margin-top: 0; 
+}
+  
+  /* Timeline Section */
+  .timeline-section {
+    background-image: url('./background.svg');
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Vertical Timeline Styling */
+  .VerticalTimelineElement {
+    background-color: #2d52a2;
+  }
+  
+  .VerticalTimelineElement-content {
+    padding: 20px;
+    background-color: #2d52a2;
+    border-radius: 10px;
+  }
+  
+  .VerticalTimelineElement-date {
+    font-size: 14px;
+    color: #2d52a2;
+  }
+  
+  /* Customize Timeline Arrow */
+  .VerticalTimelineElement-arrow {
+    border-right: 7px solid #232631;
+  }
+  
+  .timeline-section h3 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .timeline-section p {
+    font-size: 16px;
+    color: #dde0ff;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .timeline-section {
+      padding: 20px;
+    }
+  }
+  

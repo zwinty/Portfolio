@@ -1,0 +1,140 @@
+.contact__us {
+    max-width: 1120px;
+    margin-top: 4rem;
+    margin: 0 auto;
+  }
+  
+  .contact-container {
+    background-image: url('./background3.svg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    border-radius: 30px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-left {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  .contact-left-title h2 {
+    font-weight: 600;
+    color: #FBFEFD;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-left-title hr {
+    border: none;
+    width: 240px;
+    height: 5px;
+    background-color: #FBFEFD;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #707070;
+    border-radius: 10px;
+  }
+  
+  .contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+  }
+  
+  .contact-inputs:focus {
+    border: 2px solid #2d52a2;
+  }
+  
+  .contact-inputs::placeholder {
+    color: #707070;
+  }
+  
+  .contact-left .button {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    font-size: 1rem;
+    background-image: url('./blue-background.svg'); 
+    border: none;
+    border-radius: 30px;
+    background: #FBFEFD;
+  }
+  
+  .contact-right {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .contact-left {
+      padding-left: 0;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contact-inputs {
+      width: 90%;
+      margin-bottom: 15px;
+    }
+  
+    .contact-left .button {
+      width: 90%;
+    }
+  
+    .contact-left-title h2 {
+      font-size: 30px;
+    }
+  
+    .contact-left-title hr {
+      width: 160px;
+    }
+  
+    .contact-right img {
+      width: 80%; 
+      max-width: 400px; 
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-inputs {
+      width: 100%;
+    }
+  
+    .contact-left .button {
+      width: 100%;
+    }
+  
+    .contact-left-title h2 {
+      font-size: 26px;
+    }
+  
+    .contact-left-title hr {
+      width: 120px;
+    }
+  }
+  
